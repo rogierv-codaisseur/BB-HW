@@ -13,15 +13,37 @@ const hero = {
 
 function rest(objHero) {
   objHero.health = 10;
+  // displayStats(objHero)
   return objHero;
 };
 
 function pickUpItem(objHero, objWeapon) {
   objHero.inventory.push(objWeapon);
+  // displayStats(objHero);
 };
 
 function equipWeapon(objHero) {
   if (objHero.inventory.length !== 0) {
     objHero.weapon = objHero.inventory[0]
+    // displayStats(objHero);
   };
 };
+
+// Write displayStats function that writes your hero's name, health, weapontype, weapon damage to the page. Call it at the end of your script
+// function displayStats(objHero) {
+//   const heroStats = document.getElementById('heroStats');
+//   const heroName = document.createElement('p');
+//   const heroHealth = document.createElement('p');
+//   const weaponType = document.createElement('p');
+//   const weaponDamage = document.createElement('p');
+//   heroStats.appendChild(heroName);
+//   heroStats.appendChild(heroHealth);
+//   heroStats.appendChild(weaponType);
+//   heroStats.appendChild(weaponDamage);
+//   heroName.innerText = "Name: " + objHero.name;
+//   heroHealth.innerText = "Health: " + objHero.health;
+//   weaponType.innerText = "Weapon Type: " + objHero.weapon.type;
+//   weaponDamage.innerText = "Weapon Damage: " + objHero.weapon.damage;
+// };
+
+// displayStats(hero);

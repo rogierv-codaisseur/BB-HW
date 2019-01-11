@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Mocha Tests</title>
   <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -11,6 +12,7 @@
   <img id="inn" onclick="rest(hero)" src="" alt="">
   <img id="dagger" onclick="pickUpItem(hero, {'type': 'dagger', 'damage': 2})" src="" alt="">
   <img id="bag" onclick="equipWeapon(hero)" src="" alt="">
+  <!-- <div id="heroStats"></div> -->
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
