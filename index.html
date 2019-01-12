@@ -9,14 +9,26 @@
 
 <body>
   <!-- YOUR HTML HERE -->
-  <img id="inn" onclick="rest(hero); displayStats(hero)" src="" alt="Rest">
-  <img id="dagger" onclick="pickUpItem(hero, {'type': 'dagger', 'damage': 2}); displayStats(hero)" src="" alt="Pick Up">
-  <img id="bag" onclick="equipWeapon(hero); displayStats(hero)" src="" alt="Equip">
+  <img id="inn" onclick="rest(hero); displayStats(hero)" src="./images/health.png" alt="Rest" title="Rest">
+
+  <img id="dagger" onclick="pickUpItem(hero, {'type': 'dagger', 'damage': 2}); displayStats(hero)" src="./images/pickup.png"
+    alt="Pick Up" title="Pick Up">
+
+  <img id="bag" onclick="equipWeapon(hero); displayStats(hero)" src="./images/equip.png" alt="Equip" title="Equip">
+
+  <h3>Hero Stats</h3>
   <div id="heroStats"></div>
+
   <form onsubmit="changeName(hero); displayStats(hero)">
     <input type="text" id="change-name">
     <button>Change Name</button>
   </form>
+
+  <h3>Select an enemy and fight!</h3>
+  <img id="enemy1" onclick="fight(hero, enemy1)" src="./images/enemy1.png" alt="Brutus" title="Brutus">
+  <img id="enemy2" onclick="fight(hero, enemy2)" src="./images/enemy2.png" alt="Pegleg" title="Pegleg">
+  <img id="enemy3" onclick="fight(hero, enemy3)" src="./images/enemy3.png" alt="Redbeard" title="Redbeard">
+  <br>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
