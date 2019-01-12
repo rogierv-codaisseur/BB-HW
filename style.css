@@ -23,6 +23,11 @@ ul {
   list-style-type: none;
 }
 
+.enemy {
+  height: 150px;
+  width: 150px;
+}
+
 #heroStats {
   text-align: left;
   max-width: 300px;

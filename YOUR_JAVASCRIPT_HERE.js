@@ -167,5 +167,4 @@ function displayStats(objHero) {
   lives.innerText = "Lives: " + objHero.lives;
 };
 
-
 displayStats(hero);
